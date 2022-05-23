@@ -7,6 +7,7 @@ readable.on('data', (data) => {
   console.log(data);
 });
 
+// creates and returns an instance of fs.ReadStream class
 function getReadableStream() {
   return fs.createReadStream(targetFilePath, 'utf-8');
 }
